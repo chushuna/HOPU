@@ -57,7 +57,14 @@
     width: 570px;
     height: 311px;
 }
-.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .
+.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-title{
+    width: ;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-title.title{
+    overflow: hidden;
+}
 .newcont .newcont-rightbox{
     width: 530px;
     height: 366px;
