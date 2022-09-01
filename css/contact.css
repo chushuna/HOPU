@@ -3,6 +3,10 @@
 }
 .body img{
     width: 100%;
+<<<<<<< Updated upstream
+=======
+    height: 127px; 
+>>>>>>> Stashed changes
 }
 .contact{
 height: 70px;
@@ -75,6 +79,7 @@ font-size: 14px;
     margin-top: 30px;
     position: relative;
 }
+<<<<<<< Updated upstream
 .weizhi>li>div>img{
     width: 18px;
     height: 20px;
@@ -87,4 +92,88 @@ font-size: 14px;
     font-size: 14px;
     font-family: STXihei;
     display: inline-block;
+=======
+.center1>li{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    color: #425671;
+    font-size: 16px;
+}
+.btm{
+    width: 100%;
+    height: 430px;
+    background-color: #222;
+    color: #6f6f6f;
+    font-size: 10px;
+    padding-top: 50px;
+}
+.btmm{
+    width: 1200px;
+    height: 398px;
+    margin: auto;
+}
+.btmm_1{
+    width: 1200px;
+    height: 238px;
+    display: flex;
+}
+.b_1_l{
+    flex: 3;
+}
+.b_1_l>p{
+    font-size: 24px;
+    color: #fff;
+}
+.b_1_l>span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.ewm{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin: 0;
+}
+.ewm>img{
+    width: 132px;
+    height: 132px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.b_1_r{
+    flex: 8;
+    height: 238px;
+}
+.b_1_r>ul{
+    list-style-type: none;
+    display: flex;
+}
+.b_1_r>ul>li{
+    flex: 1;
+}
+.b_1_r>ul>li>p>a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+}
+.b_1_r>ul>li>span>a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+}
+.btmm_2{
+    width: 1200px;
+    height: 72px;
+}
+.btmm_3{
+    width: 1200px;
+    height: 48px;
+>>>>>>> Stashed changes
 }
