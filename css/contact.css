@@ -3,10 +3,7 @@
 }
 .body img{
     width: 100%;
-<<<<<<< Updated upstream
-=======
     height: 127px; 
->>>>>>> Stashed changes
 }
 .contact{
 height: 70px;
@@ -79,7 +76,6 @@ font-size: 14px;
     margin-top: 30px;
     position: relative;
 }
-<<<<<<< Updated upstream
 .weizhi>li>div>img{
     width: 18px;
     height: 20px;
@@ -92,7 +88,7 @@ font-size: 14px;
     font-size: 14px;
     font-family: STXihei;
     display: inline-block;
-=======
+}
 .center1>li{
     width: 60%;
     height: 100px;
@@ -175,5 +171,4 @@ font-size: 14px;
 .btmm_3{
     width: 1200px;
     height: 48px;
->>>>>>> Stashed changes
 }
