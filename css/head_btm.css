@@ -1,0 +1,154 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.head{
+    width: 100%;
+    height: 127px;
+}
+.headd{
+    width: 1061px;
+    height: 23px;
+    display: flex;
+    padding-top: 74px;
+}
+.headd-l>img{
+   flex: 3;
+}
+.headd-r>ul{
+    width: 735px;
+    height: 16px;
+    list-style-type: none;
+    flex: 7;
+    display: flex;
+}
+.headd-r>ul>li>a{
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    color: #25406b;
+    font-size: 16px;
+    font-family: STXihei;
+}
+
+.btm{
+    width: 100%;
+    height: 430px;
+    background-color: #222;
+    color: #6f6f6f;
+    font-size: 10px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+.btmm{
+    width: 1200px;
+    height: 398px;
+    margin: auto;
+}
+.btmm_1{
+    width: 1200px;
+    height: 238px;
+    display: flex;
+}
+.b_1_l{
+    flex: 3;
+}
+.b_1_l>p{
+    font-size: 24px;
+    color: #fff;
+}
+.b_1_l>span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.ewm{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin: 0;
+}
+.ewm>img{
+    width: 132px;
+    height: 132px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.b_1_r{
+    flex: 8;
+    height: 238px;
+}
+.b_1_r>ul{
+    list-style-type: none;
+    display: flex;
+}
+.b_1_r>ul>li{
+    flex: 1;
+}
+.b_1_r>ul>li>p>a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+}
+.b_1_r>ul>li>span>a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+}
+.b_1_r>ul>li:nth-child(4){
+    flex: 4;
+}
+.btmm_2{
+    width: 1200px;
+    height: 72px;
+    margin-top: 30px;
+}
+.btmm_2>p>span{
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+}
+.btmm_2>p>span>img{
+    width: 13px;
+    height: 13px;
+}
+.btmm_3{
+    width: 1000px;
+    margin-top: 40px;
+    position: relative;
+}
+.btmm_3>span{
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+}
+.btmm_3>em{
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 540px;
+}
+.span1{
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+}
+.span2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.top{
+    background: url(../img/img1/top.png) no-repeat;
+    width: 43px;
+    height: 68px;
+    position: fixed;
+    bottom: 485px;
+    right: 355px;
+}
