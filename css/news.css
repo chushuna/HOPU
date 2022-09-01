@@ -1,28 +1,47 @@
 *{
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
     font-family: STXihei;
     color: #002463;
+}
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
 }
 .main{
     padding: 0 20px 0 20px;
     height: auto;
     min-height: 752px;
     overflow: auto;
+    min-width: 1200px;
+    overflow: hidden;
 }
 .main .newimg img{
     width: 100%;
     height: auto;
 }
+.newlanbox{
+    border-bottom:1px solid #e6e6e6; 
+    box-sizing: border-box;
+}
 .main .newlan{
     margin-top: 28px;
     margin-left: 271px;
-    border-bottom:1px solid #e6e6e6 
+    border-bottom:1px solid #e6e6e6;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 .main .newlan ul{
     list-style-type: none;
     background-color: white;
     line-height: 37px;
+    box-sizing: border-box;
 }
 .main .newlan ul .newlan-tit{
     float: left;
@@ -30,6 +49,7 @@
     font-size: 14px;
     padding: 0 20px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .main .newlan ul .newlan-tit:hover{
     color: #303133;
@@ -39,7 +59,8 @@
     color: #303133;
 }
 .newcont{
-    width: 100%;
+    width: 1140px;
+    margin: auto;
     margin-top: 64px;
     display: flex;
     flex: 1;
@@ -52,20 +73,124 @@
 .newcont .newcont-leftbox .newcont-leftbox-flex{
     width: 583px;
     height: 311px;
+    margin: 0;
 }
 .newcont .newcont-leftbox .newcont-leftbox-flex img{
     width: 570px;
     height: 311px;
+    filter: blur(7px);
+    display: block;
+    margin: 0;
+}
+.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox{
+    margin-top: 33px;
+    width: 559px;
+    display: flex;
+    align-items: center;
+    color: #4b617b;
+    cursor: pointer;
+}
+.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-box{
+    width: 5px;
+    height: 15px;
+    background: brown;
 }
 .newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-title{
-    width: ;
+    width: 250px;
     margin-left: 30px;
     font-size: 18px;
 }
-.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-title.title{
+.newcont .newcont-leftbox .newcont-leftbox-flex .newcont-leftbox-flex-textbox .newcont-leftbox-flex-textbox-datetime{
+    margin-left: 10px;
+    font-size: 18px;
+}
+[class ~="title"]{
+    /* 多行文本溢出隐藏 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
     overflow: hidden;
+    /* 文本溢出部分用圆点代替 */
+    text-overflow: ellipsis;
 }
 .newcont .newcont-rightbox{
+    box-sizing: border-box;
+    padding-left: 33px;
     width: 530px;
     height: 366px;
+}
+.newcont .newcont-rightbox .newcont-rightbox-textbox{
+    width: 454px;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: STXihei;
+    font-size: 15px;
+    color: #4b617b;
+}
+.newcont .newcont-rightbox .newcont-rightbox-text-texttime{
+    width: 454px;
+    height: 14px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 38px;
+}
+.newcont .newcont-rightbox .newcont-rightbox-text-texttime .newcont-rightbox-text-texttime-text{
+    height: 12px;
+    color: #4b617b;
+    margin-right: 100px;
+}
+.newcont .newcont-rightbox .newcont-rightbox-text-texttime .right{
+    max-width: 250px;
+    color: #112342;
+    cursor: pointer;
+}
+.right::before{
+    text-decoration: underline;
+}
+.newcont .newcont-rightbox-button{
+    width: 454px;
+    height: 43px;
+    display: flex;
+    justify-content: flex-end;
+}
+.newcont .newcont-rightbox-button div{
+    padding: 2px 5px;
+}
+.newcont .newcont-rightbox-button div button{
+    padding: 0 6px;
+    width: 50px;
+    height: 43px;
+    border: 1px solid currentColor;
+}
+.newcont .newcont-rightbox-button div button .icon{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: element-icons!important;
+    font-style: normal;
+    line-height: 1;
+}
+.newcont .newcont-rightbox-button div .but-adv{
+    color: #a26161;
+    margin-right: 10px;
+    width: 50px;
+    height: 43px;
+    border: 1px solid currentColor;
+    background-color: #ffffff;
+}
+.i-left::before{
+    content: "<";
+    color: #a26161;
+}
+.newcont .newcont-rightbox-button div .but-ret{
+    background-color: #761818;
+    color: #e9dada;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.i-right::before{
+    content: ">";
+    color: #dddddd;
 }
