@@ -1,0 +1,85 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.body{
+    padding: 0 20px;
+}
+.body img{
+    width: 100%;
+}
+.contact{
+    height: 70px;
+    line-height: 70px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #d3d3d3;
+    width: 98%;
+    padding: 0 20px;
+    }
+    .contact>p{
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #761818;
+    margin-left: 200px;
+    width: 80px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;  
+    margin-left: 20%;
+    font-size: 14px;
+    }
+    .bbody{
+       width: 870px;
+       height: 735px;
+       border-width: 0 1px 0 0;
+       border-style: solid;
+       border-color: #d3d3d3;
+       position: relative;
+    }
+    .bbody>div>p{
+        font-weight: 400;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #112342;
+        font-size: 14px;
+        font-family: STXihei;
+        height: 24px;
+    }
+    .body1{
+        position: absolute;
+        margin-top: 30px;
+    }
+    .body2{
+        margin-top: 30px;
+    }
+    .body3{
+        margin-top: 50px;
+        color: #112342;
+        font-weight: normal;
+    }
+    .body3>h2{
+        font-stretch: normal;
+        letter-spacing: 0;
+        color: #112342;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .body3>p{
+    letter-spacing: 0;
+    color: #112342;
+    }
+    .body3>h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #112342;
+    border-left: 2px solid #761818;
+    height: 18px;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-weight: normal;
+    }
