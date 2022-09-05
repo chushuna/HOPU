@@ -72,7 +72,7 @@
 
 .c2{
     margin-top: 40px;
-   width: 1160px;height: 778px;
+   width: 98%;height: 778px;
    margin-left: 10px;
 
 }
@@ -114,23 +114,26 @@
 
 
 .jytj{
-    width: 850px;height: 166px;
+    width: 980px;height: 166px;
     background-color: #ebeaec;
 }
 #dd2{
+    margin-left: px;
    margin-top: 0px;
+   padding-left: 50px;
 }
 .s1{
     margin-left: 100px;margin-top: 40px;
     display: inline-block; left: 200px;
 }
 .s2{
-    margin-left: 100px;
+    margin-left: 150px;
     display: inline-block; left: 200px;
  }
  .s3{
     
-    margin-left: 100px;
+    margin-left: 180px;
+    
     display: inline-block; left: 200px;
  }
 .z{
