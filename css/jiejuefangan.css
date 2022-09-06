@@ -83,7 +83,7 @@
 }
 .c3{
     padding-right: 40px;
-    width: 830px;height: 290px; 
+    width: 880px;height: 290px; 
     background-color: #f7f6f7;
     position: absolute;
 }
@@ -123,16 +123,16 @@
    padding-left: 50px;
 }
 .s1{
-    margin-left: 100px;margin-top: 40px;
+    margin-left: 150px;margin-top: 40px;
     display: inline-block; left: 200px;
 }
 .s2{
-    margin-left: 150px;
+    margin-left: 200px;
     display: inline-block; left: 200px;
  }
  .s3{
     
-    margin-left: 180px;
+    margin-left: 210px;
     
     display: inline-block; left: 200px;
  }
@@ -148,7 +148,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #112342;
-    margin-left: 180px;
+    margin-left: 260px;
     margin-top: 0px;
 }
 .ss
