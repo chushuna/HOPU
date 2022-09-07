@@ -22,6 +22,7 @@ div{
 .main .newimg img{
     width: 100%;
     height: auto;
+    max-width: 1682px;
     margin-bottom: 35px;
 }
 .newlanbox{
@@ -51,7 +52,13 @@ div{
     height: 49px;
     cursor: pointer;
 }
-.newlan-tit>a{
+.main .newlan ul .newlan-tit>a{
+    display: block;
+    width: 84px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 36px;
+    color: #002463;
     text-decoration: none;
 }
 .tit-img{
@@ -67,7 +74,7 @@ div{
     left: 21px;
 }
 .newlan-tit>a{
-    display: block;
+    display: inline-block;
     width: 84px;
     height: 14px;
     font-size: 14px;
@@ -87,39 +94,44 @@ div{
     padding-top: 40px;
     padding-left: 290px;
 }
-.textbox>.text>.te-heading{
+.textlis{
+    width: 780px;
+}
+.textti{
     display: flex;
     flex-direction: column;
     font-family: STXihei;
 }
-.textbox>.text>.te-heading>h2{
+.textti>h2{
+    width: 100%;
     font-size: 30px;
     font-weight: 400;
     font-stretch: normal;
     letter-spacing: 0;
     color: #bec0bf;
-    margin: 0;
     margin-bottom: 14px;
 }
-.textbox>.text>.te-heading>h3{
+.textti>h3{
+    width: 100%;
     font-size: 18px;
     font-weight: 400;
     font-stretch: normal;
     line-height: 36px;
     letter-spacing: 0;
     color: #112342;
-    margin: 0;
 }
-.textbox>.text>.te-heading>h4{
+.textti>h4{
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
     font-stretch: normal;
     line-height: 36px;
     letter-spacing: 0;
     color: #bec0bf;
-    margin: 0;
 }
-.te-content{
-    margin-bottom: 53px;
+.textbo{
+    width: 860px;
+}
+.textbo>p>img{
     width: 860px;
 }
