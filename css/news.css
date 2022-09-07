@@ -9,10 +9,16 @@ div{
     outline: 0;
     font-size: 100%;
 }
+.head>div ,.btm>div ,.top>div{
+    margin: auto;
+}
+.btm{
+    margin-top: 0px !important;
+}
 .main{
     padding: 0 20px 0 20px;
     height: auto;
-    min-height: 752px;
+    min-height: 753px;
     overflow: auto;
     min-width: 1200px;
     overflow: hidden;
@@ -20,6 +26,7 @@ div{
 .main .newimg img{
     width: 100%;
     height: auto;
+    margin-top: 1px;
 }
 .newlanbox{
     box-sizing: border-box;
@@ -40,7 +47,7 @@ div{
     line-height: 37px;
     box-sizing: border-box;
 }
-.main .newlan ul .newlan-tit{
+.clearfix li{
     float: left;
     height: 60px;
     font-size: 14px;
@@ -50,13 +57,10 @@ div{
     color: #909399;
     font-family: STXihei;
 }
-.newlan-tit>a{
-    display: inline-block;
-}
-.main .newlan ul .newlan-tit:hover{
+.clearfix li:hover{
     color: #303133;
 }
-.main .newlan ul .newlan-tit.active{
+.clearfix .active{
     border-bottom: 3px solid #761818;
     color: #303133;
 }
@@ -66,17 +70,19 @@ div{
     width: 100%;
     height: 1px;
 }
+#necontent{
+    list-style-type: none;
+}
 .newcont{
     width: 1140px;
     margin: auto;
     margin-top: 64px;
-    display: flex;
-    flex: 1;
 }
 .newcont .newcont-leftbox{
     width: 601px;
     height: 392px;
     border-bottom: 1px solid #dddddd;
+    float: left;
 }
 .newcont .newcont-leftbox .newcont-leftbox-flex{
     width: 583px;
@@ -139,16 +145,25 @@ div{
     padding-left: 33px;
     width: 530px;
     height: 366px;
+    float: left;
 }
-.newcont .newcont-rightbox .newcont-rightbox-textbox{
+.newcont-rightbox-textbox{
+    width: 454px;
+    height: 323px;
+    font-family: STXihei;
+    font-size: 15px;
+    color: #4b617b;
+    display: none;
+}
+.newcont-rightbox-textbox.select{
+    display: block;
+}
+.n-r-t{
     width: 454px;
     height: 323px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: STXihei;
-    font-size: 15px;
-    color: #4b617b;
 }
 .newcont .newcont-rightbox .newcont-rightbox-text-texttime{
     width: 454px;
@@ -193,6 +208,11 @@ div{
     height: 43px;
     border: 1px solid currentColor;
 }
+.disabled{
+    color: #c0c4cc;
+    background-color: #fff;
+    cursor: not-allowed;
+}
 .newcont .newcont-rightbox-button div button .icon{
     display: block;
     font-size: 12px;
@@ -209,19 +229,17 @@ div{
     border: 1px solid currentColor;
     background-color: #ffffff;
 }
-.i-left::before{
-    content: "<";
-    color: #a26161;
-}
 .newcont .newcont-rightbox-button div .but-ret{
     background-color: #761818;
     color: #e9dada;
     padding-left: 12px;
     cursor: pointer;
 }
-.i-right::before{
-    content: ">";
-    color: #dddddd;
+.newcont .newcont-rightbox-button div button:hover{
+    background-color: #dedede;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    color: #c8a3a3;
 }
 .newconts{
     width: 1140px;
@@ -250,7 +268,7 @@ div{
     margin-bottom: 27px;
     cursor: pointer;
 }
-.news ul li .n-img{
+.news ul li a .n-img{
     float: left;
     width: 330px;
     height: 180px;
@@ -319,11 +337,6 @@ div{
     margin-top: -149px;
     vertical-align: top;
 }
-button:disabled{
-    color: #c0c4cc;
-    background-color: #fff;
-    cursor: not-allowed;
-}
 .p .p-s{
     white-space: nowrap;
     padding: 2px 5px;
@@ -335,6 +348,7 @@ button:disabled{
     min-width: 22px;
     min-height: 22px;
     border: none;
+    background-color: white;
 }
 .p .p-s .p-pre i{
     display: inline-block;
