@@ -23,8 +23,8 @@
                 <ul>
                     <li><a href="index.html">首页</a></li>
                     <li><a href="./news.html">新闻</a></li>
-                    <li><a href="#">合作伙伴</a></li>
-                    <li><a href="#">解决方案</a></li>
+                    <li><a href="partner.html">合作伙伴</a></li>
+                    <li><a href="jiejuefangan.html">解决方案</a></li>
                     <li><a href="./social.html">社会责任</a></li>
                     <li><a href="./contact.html">联系方式</a></li>
                     <li><a href="#">简</a>/<a href="#">繁</a>/<a href="#">EN</a></li>
@@ -55,7 +55,7 @@
             <div class="qh1 qh2">
                 <p><a href="newsBranch.html"><span class="sj">2022-08-20</span><span class="wz">
                             公司被认定为湖北省第二批产教融合型企业</span></a></p>
-                <p><a href="newsBranch1.html"><span class="sj">2022-06-24</span><span
+                <p><a href="newsBranch2.html"><span class="sj">2022-06-24</span><span
                             class="wz">腾讯云、湖北师范大学文理学院与厚溥共建腾讯云大数据产业学院</span></a></p>
                 <p><a href="newsBranch2.html"><span class="sj">2022-06-17</span><span
                             class="wz">武昌首义学院、腾讯云与厚溥共建腾讯云产业学院</span></a></p>
@@ -91,6 +91,7 @@
                 <div class="you" onclick="next()"> > </div>
         </div>
     </div>
+    <hr style="width: 600px; margin-top: 40px; margin-left: 750px;"/>
     <div class="soucer">
         <div class="s1"><img src="img/img1/solution.png" alt="">
             <div class="s3"></div>
@@ -195,7 +196,7 @@
         </div>
     </div>
     <div class="news">
-        <span>MORE→</span>
+        <span><a href="partner.html">MORE→</a></span>
     </div>
     <div class="lianxi">
         <div class="dong">
@@ -270,22 +271,22 @@
                     <div class="b_1_r">
                         <ul>
                             <li>
-                                <p><a href="#">关于我们</a></p>
+                                <p><a href="group.html">关于我们</a></p>
                                 <span><a href="group.html">集团简介</a></span>
-                                <span><a href="#">集团新闻</a></span>
-                                <span><a href="#">联系我们</a></span>
-                                <span><a href="#">社会责任</a></span>
+                                <span><a href="news.html">集团新闻</a></span>
+                                <span><a href="contact.html">联系我们</a></span>
+                                <span><a href="social.html">社会责任</a></span>
                             </li>
                             <li>
-                                <p><a href="#">解决方案</a></p>
-                                <span><a href="#">面向用户</a></span>
-                                <span><a href="#">面向高校</a></span>
-                                <span><a href="#">面向企业</a></span>
+                                <p><a href="jiejuefangan.html">解决方案</a></p>
+                                <span><a href="jiejuefangan.html">面向用户</a></span>
+                                <span><a href="yuanxiao.html">面向高校</a></span>
+                                <span><a href="qiye.html">面向企业</a></span>
                             </li>
                             <li>
                                 <p><a href="#">服务</a></p>
                                 <span><a href="#">服务范围</a></span>
-                                <span><a href="#">服务案例</a></span>
+                                <span><a href="partner.html">服务案例</a></span>
                             </li>
                             <li>
                                 <p><a href="#">媒体报道</a></p>
@@ -313,13 +314,37 @@
                     </p>
                 </div>
                 <div class="btmm_3">
-                    <span class="span1">copyrigt @ 2020-2030 武汉厚溥数字科技有限公司ALL RIGHTS RESERVED.</span>
+                    <span class="span1">copyright @ 2020-2030 武汉厚溥数字科技有限公司ALL RIGHTS RESERVED.</span>
                     <em>鄂ICP备11005077号</em>
                     <span class="span2">鄂网安备44030502002037</span>
                 </div>
             </div>
         </div>
         <script>
+            // alert("重写alert方法","设计思路！");
+            window.alert = function (title) {
+                // var alertbox = document.getElementById("alert_box");
+                var html = `<dl>
+                      <dd></dd>
+                   <span>${title}</span> 
+                         `;
+                // if (alertbox) {
+                //   //如果窗口中已存在对话框，则直接显示内容
+
+                // alertbox.style.display = "block";
+                // }
+                //如果不存在对话框，则创建对话框并显示内容
+                var div = document.createElement("div");
+                div.id = "alert_box";
+                div.style.display = "block";
+                document.body.appendChild(div);
+                div.innerHTML = html;
+                setTimeout(() => {
+                    div.style.top = 0;
+                    div.style.opacity = "0";
+                    div.style.transition = "1s";
+                }, 1500);
+            }
             var img = 0
             var tp = document.getElementsByClassName("tp")[0]
             var tps = tp.getElementsByClassName("pic")
@@ -330,6 +355,7 @@
                     // index=qhs.length-1
                     tps[0].style.display = "block"
                     alert("当前页面已经是第一页")
+
                 } else {
                     tps[img].style.display = "block"
                 }
@@ -375,7 +401,7 @@
             var ul = document.getElementsByClassName("yic")
             var left = document.getElementById("btn-left")
             var right = document.getElementById("btn-right")
-            console.log(ul)
+            // console.log(ul)
             var n = 0
             function next2() {
                 ul[n].style.display = "none"
@@ -384,6 +410,7 @@
                     n = ul.length - 1
                     right.style.opacity = "0"
                     //  left.style.opacity="0"
+                    // left.className()
                     ul[n].style.display = "block"
                     // alert("当前页面已经是最后一页")
                 } else {
@@ -462,59 +489,60 @@
 
                 }
             }
-        
+
 
             function addMap1() {
-            layer.open({
-                type: 2,
-                title: '',
-                maxmin: false,
-                shadeClose: true,
-                area: ['1000px', '500px'],
-                content: 'map.html'
-            });
-        }
+                layer.open({
+                    type: 2,
+                    title: '',
+                    maxmin: false,
+                    shadeClose: true,
+                    area: ['1000px', '500px'],
+                    content: 'map.html'
+                });
+            }
 
-        function addMap2() {
-            layer.open({
-                type: 2,
-                title: '',
-                maxmin: false,
-                shadeClose: true,
-                area: ['1000px', '500px'],
-                content: 'map2.html'
-            });
-        }
+            function addMap2() {
+                layer.open({
+                    type: 2,
+                    title: '',
+                    maxmin: false,
+                    shadeClose: true,
+                    area: ['1000px', '500px'],
+                    content: 'map2.html'
+                });
+            }
 
-        function addMap3() {
-            layer.open({
-                type: 2,
-                title: '',
-                maxmin: false,
-                shadeClose: true,
-                area: ['1000px', '500px'],
-                content: 'map3.html'
-            });
-        }
+            function addMap3() {
+                layer.open({
+                    type: 2,
+                    title: '',
+                    maxmin: false,
+                    shadeClose: true,
+                    area: ['1000px', '500px'],
+                    content: 'map3.html'
+                });
+            }
 
-        function addMap4() {
-            layer.open({
-                type: 2,
-                title: '',
-                maxmin: false,
-                shadeClose: true,
-                area: ['1000px', '500px'],
-                content: 'map4.html'
-            });
-        // setTimeout(()=>{
-        //     let d=document.getElementById("show")
-        //     d.style.filter='blur(0px)'
-        // },1000)
-        }
-        setTimeout(()=>{
-             let img=document.getElementById("show")
-             img.style.filter='blur(0px)'
-            },1000)
+            function addMap4() {
+                layer.open({
+                    type: 2,
+                    title: '',
+                    maxmin: false,
+                    shadeClose: true,
+                    area: ['1000px', '500px'],
+                    content: 'map4.html'
+                });
+                // setTimeout(()=>{
+                //     let d=document.getElementById("show")
+                //     d.style.filter='blur(0px)'
+                // },1000)
+            }
+            setTimeout(() => {
+                let img = document.getElementById("show")
+                img.style.filter = 'blur(0px)'
+            }, 1000)
         </script>
 </body>
+
 </html>
