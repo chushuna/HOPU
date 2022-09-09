@@ -12,14 +12,16 @@
     display: flex;
     padding-top: 74px;
 }
-.headd-l>img{
+.headd-l{
    flex: 3;
+}
+.headd-r{
+    flex: 7;
 }
 .headd-r>ul{
     width: 735px;
     height: 16px;
     list-style-type: none;
-    flex: 7;
     display: flex;
 }
 .headd-r>ul>li>a{
@@ -67,6 +69,7 @@
     height: 150px;
     background-color: #fff;
     margin: 0;
+    margin-top: 10px;
 }
 .ewm>img{
     width: 132px;
