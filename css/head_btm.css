@@ -15,6 +15,9 @@
 .headd-l{
    flex: 3;
 }
+.headd-l>img{
+    cursor: pointer;
+}
 .headd-r{
     flex: 7;
 }
@@ -31,6 +34,9 @@
     color: #25406b;
     font-size: 16px;
     font-family: STXihei;
+}
+.headd-r>ul>.last>a{
+    color: #333333;
 }
 
 .btm{

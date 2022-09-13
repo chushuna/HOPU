@@ -14,15 +14,6 @@ function select_menu(obj1) {
     console.log(imgs);
     imgs.style.filter="blur(0px)";
   },1000)
-  // setTimeout(() => {
-  //   var imgs = d.getElementsByClassName("main_content_middle");
-  //   console.log(imgs);
-  //   imgs.style.filter="blur(0px)";
-  //   // document.getElementById(img).style.filter = "blur(0px)";
-  //   // for(var n = 0;n < imgs.length;n++){
-  //   //     imgs[n].style.filter = "blur(0px)";
-  //   // }
-  // }, 1000)
 }
 //重置所有的菜单和内容的颜色
 function reset_style() {
@@ -34,9 +25,7 @@ function reset_style() {
   }
   for (var j = 0; j < div_nodes.length; j++) {
     div_nodes[j].style.display = "none";
-  }
-  //图片清晰
-  
+  } 
 }
 
 setTimeout(() => {
