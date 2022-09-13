@@ -205,7 +205,7 @@
         </div>
     </div>
     <div class="ditu">
-        <div class="didian">
+        <div class="didian" onmouseover="over()" onmouseleave="leave()">
             <ul class="yic yi">
                 <li class="body1" onclick="addMap1()">
                     <p>湖北 · 武汉</p>
@@ -256,7 +256,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
+    </div>
+    </div>
         <div class="btm" style="margin-top: -30px;">
             <div class="btmm">
                 <div class="btmm_1">
@@ -401,23 +402,27 @@
             var ul = document.getElementsByClassName("yic")
             var left = document.getElementById("btn-left")
             var right = document.getElementById("btn-right")
+            var didian =document.getElementsByClassName("didian")
             // console.log(ul)
             var n = 0
             function next2() {
+                console.log(ul[n])
                 ul[n].style.display = "none"
                 n++
                 if (n >= ul.length - 1) {
                     n = ul.length - 1
-                    right.style.opacity = "0"
+                    // right.style.opacity = "0"
                     //  left.style.opacity="0"
                     // left.className()
                     ul[n].style.display = "block"
+                     right.style.opacity="0"
+                
                     // alert("当前页面已经是最后一页")
                 } else {
-                    right.style.opacity = "1"
-                    left.style.opacity = "1"
                     ul[n].style.display = "block"
-                }
+                    right.style.opacity="1"
+                
+                 }
             }
             function pre2() {
                 ul[n].style.display = "none"
@@ -425,16 +430,45 @@
                 if (n <= 0) {
                     n = 0
                     // index=qhs.length-1
-                    left.style.opacity = "0"
+                    // left.style.opacity = "0"
                     //  right.style.opacity="0"
                     ul[0].style.display = "block"
+                   left.style.opacity="0"
+                
                     // alert("当前页面已经是第一页")
-                } else {
+                } else {left.style.opacity = "1"
                     ul[n].style.display = "block"
-                    left.style.opacity = "1"
-                    right.style.opacity = "1"
+                    // didian.onmouseover = function(){
+                    //     console.log(11)
+                    //     left.style.opacity = "1"
+                    // }
+                    // didian.onmouseleave = function(){
+                    //     console.log(222)
+                    //     left.style.opacity = "0"
+                    }
+                    // left.style.opacity = "1"
+                    // right.style.opacity = "1"
                 }
-            }
+
+             function  leave(){
+                right.style.opacity="0"
+                left.style.opacity="0"
+             }
+             function over(){
+                console.log(n)
+               if(n==0){
+                right.style.opacity="1"
+                left.style.opacity="0"
+               }
+               else if(n==2){
+                right.style.opacity="0"
+                left.style.opacity="1"
+               }
+               else{
+                right.style.opacity="1"
+                left.style.opacity="1"
+               }
+             }
             window.onload = function () {
                 var div = document.getElementsByClassName("lbt")[0]
                 // console.log(div)
@@ -488,6 +522,7 @@
                     div.scrollTop = count * 630
 
                 }
+                 
             }
 
 
@@ -537,6 +572,7 @@
                 //     let d=document.getElementById("show")
                 //     d.style.filter='blur(0px)'
                 // },1000)
+                
             }
             setTimeout(() => {
                 let img = document.getElementById("show")
