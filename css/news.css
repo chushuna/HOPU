@@ -349,6 +349,8 @@ div{
     min-height: 22px;
     border: none;
     background-color: white;
+    cursor: not-allowed;
+    
 }
 .p .p-s .p-pre i{
     display: inline-block;

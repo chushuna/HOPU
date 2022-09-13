@@ -1,8 +1,31 @@
-window.onload = function(){
+// window.onload = function(){
     var oUl = document.getElementsByClassName("clearfix")[0];
     var oLis = oUl.getElementsByTagName("li");
     var oUll = document.getElementById("necontent");
     var oLiss= oUll.getElementsByTagName("li");
+    // 获取url参数
+    // let url =decodeURI(window.location.href); 
+    // console.log(url);
+    // let mode = url.split('=');
+    // console.log(mode);
+    // if(mode[1] = "'detail'"){
+    //     oLis[0].className = "newlan-tit";
+    //     oLis[1].className = "newlan-tit active";
+    //     oLiss[0].style.display = "none";
+    //     oLiss[1].style.display = "block";
+    // }else{
+    //     oLis[0].className = "newlan-tit active";
+    //     oLis[1].className = "newlan-tit";
+    //     oLiss[0].style.display = "block";
+    //     oLiss[1].style.display = "none";
+    // }
+    var url = location.search;
+    if (url.indexOf("?") != -1) {    //判断是否有参数
+        oLis[1].className = "newlan-tit active";
+        oLiss[1].style.display = "block";
+        oLis[0].className = "newlan-tit";
+        oLiss[0].style.display = "none";
+     }
     for (var i= 0;i<oLis.length;i++){ 
         oLis[i].index = i;
         oLis[i].onclick = function (){
@@ -13,6 +36,7 @@ window.onload = function(){
             this.className = "active";
             oLiss[this.index].style.display = "block";
         }
+        
     }
     var aIem = document.getElementsByClassName("newcont-rightbox-textbox");
     var but = document.getElementsByClassName("but");
@@ -46,16 +70,4 @@ window.onload = function(){
         }
     }
 
-    // 获取url参数
-    let url =decodeURI(window.location.href); 
-    console.log(url);
-    let mode = url.split('=');
-    console.log(mode[1]);
-    if(mode = 'delete'){
-        oLis[0].className = "newlan-tit";
-        oLis[1].className = "newlan-tit active";
-        oLiss[0].style.display = "none";
-        oLiss[1].style.display = "block";
-        mode = 'undefinet';
-    }
-}
+// }
