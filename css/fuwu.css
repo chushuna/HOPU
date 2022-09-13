@@ -1,0 +1,57 @@
+.service_header{
+    width: 1044px;height: 81px;
+    width: 90%;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+    margin-bottom: 47px;
+    font-size: 14px;
+}
+.service_sp1{
+    margin-top: 25px;margin-left: 350px;
+    border-bottom: 3px solid brown;
+    padding-bottom: 33px;
+    display: inline-block;
+}
+
+
+.big-service{
+    margin-left: 420px;
+    width: 1080px;height: 900px;
+}
+.service1{ 
+   padding-bottom: 80px;
+    width: 1080px;height: 150px;
+    display: flex;
+}
+.service1-right1{
+    width: 590px;height: 150px;
+    background-color: #f6f6f6;
+    /* display: flex; */
+    min-width: 340px;
+}
+.fangkuai{   
+    text-align: center;
+    background-color: #771916;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: STXihei;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+.service1-right1 h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: STXihei;
+    margin-left: 30px;
+}
+.service1-right1 p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: STXihei;
+    width: 430px;
+    margin-left: 30px;
+}
