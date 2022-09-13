@@ -1,0 +1,96 @@
+.c1{
+    overflow: hidden;
+    position: relative;
+    width: 98%;
+    height: 116px;
+    border-bottom: 2px solid #e1e1e1;
+}
+.timg{
+    margin-left: 20px;
+}
+
+.c1 ul{
+    font-size: 14px;
+    line-height: 36px;
+    color: #545b68;
+    margin-left: 350px;
+    margin-top: 46px;
+}
+.sj{
+    position: absolute;
+    margin-top: 31px;left: 477px;width: 0;height: 0;
+    border: 6px solid transparent;
+    border-left-color: #112342;
+}
+.c1 ul li{
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    margin-top: 6.5px; 
+    line-height: 60px;
+    text-align: center;    
+}
+.c1 ul .tit3{
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #761818;
+}
+.c1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.big{
+    margin-left: 400px;
+    margin-top: 50px;
+   height: 802px;
+   filter: blur(5px);
+
+}
+.com{
+    margin-left: 38 0px;
+}
+.shang{
+    height: 340px;
+    margin-top: 18px;
+    display: flex;
+}
+.zuo1{
+    width: 433px;height: 186px;
+}
+.pfor{
+    font-family: 华文细黑;
+    font-size: 48px;
+    color: #f2f3f4;
+    margin-bottom: 20px;
+}
+.ssp{
+    display: inline-block;
+    color: #112342;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+.xiao{
+    width: 82px;height: 25px;
+    padding-right: 401px;
+    
+}
+.right1{
+    margin-left: 20px;
+}
+.xia{
+    height: 340px;
+    margin-top: 18px;
+    display: flex;
+}
+.te1{
+    color: #4b617b;
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 20px;
+}
+.xx{
+    margin-top: 66px;
+    padding-left: 20px;
+    width: 373px;height: 274px;
+}

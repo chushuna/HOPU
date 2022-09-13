@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0 auto;
+}
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+.head>div ,.btm>div ,.top>div{
+    margin: auto;
+}
+.main{
+    padding: 0 20px 0 20px;
+    height: auto;
+    overflow: auto;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.main .newimg img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+.newlanbox{
+    box-sizing: border-box;
+}
+.main .newlan{
+    border-bottom:1px solid #e6e6e6;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main .newlan ul{
+    width: 13%;
+    list-style-type: none;
+    background-color: white;
+    line-height: 37px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    margin-left: 290px;
+    font-family: STXihei;
+}
+.main .newlan ul .newlan-tit{
+    width: 56px;
+    height: 49px;
+    cursor: pointer;
+}
+.newlan-tit>a{
+    text-decoration: none;
+}
+.tit-img{
+    width: 56px;
+    height: 49px;
+    text-align: center;
+    padding-top: 3px;
+    position: relative;
+}
+.tit-img>img{
+    position: absolute;
+    top: 12px;
+    left: 21px;
+}
+.newlan-tit>a{
+    display: block;
+    width: 84px;
+    height: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #002463;
+}
+.main .newlan ul .newlan-tit.active{
+    border-bottom: 3px solid #761818;
+    color: #303133;
+}
+.textbox{
+    width: 885px;
+    border-right: 1px solid #e1e1e1;
+    padding-top: 40px;
+    padding-left: 290px;
+}
+.textbox>.text>.te-heading{
+    display: flex;
+    flex-direction: column;
+    font-family: STXihei;
+}
+.textbox>.text>.te-heading>h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #bec0bf;
+    margin: 0;
+    margin-bottom: 14px;
+}
+.textbox>.text>.te-heading>h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #112342;
+    margin: 0;
+}
+.textbox>.text>.te-heading>h4{
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #bec0bf;
+    margin: 0;
+}
+.te-content{
+    margin-bottom: 53px;
+    width: 860px;
+}
