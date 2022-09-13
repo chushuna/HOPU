@@ -16,10 +16,10 @@
             </div>
             <div class="headd-r">
                 <ul>
-                    <li><a href="#">首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li><a href="./news.html">新闻</a></li>
-                    <li><a href="#">合作伙伴</a></li>
-                    <li><a href="#">解决方案</a></li>
+                    <li><a href="social.html">合作伙伴</a></li>
+                    <li><a href="jiejuefangan.html">解决方案</a></li>
                     <li><a href="./social.html">社会责任</a></li>
                     <li><a href="./contact.html">联系方式</a></li>
                     <li><a href="#">简</a>/<a href="#">繁</a>/<a href="#">EN</a></li>
@@ -30,7 +30,7 @@
         
      </div>
      <div class="body">
-        <img src="./img/img1/responsi.png" alt="">
+        <img src="./img/img1/responsi.png" alt="" >
         <div class="contact">
             <p>社会责任</p>
          </div>
@@ -43,7 +43,7 @@
                 <p>· 我们倡导再生纸的重复利用，尽可能减少对森林的开发破坏;</p>
                 <p>· 我们将数据服务全部转移到云端，尽可能减少能耗;</p>
         <div class="body2">
-            <img src="img/img1/resp1.png" alt="">
+            <img src="img/img1/resp1.png" alt="" id="tp">
         </div>
         <div class="body3">
             <h2>技术创新 绿色经营</h2>
@@ -118,5 +118,11 @@
         </div>
     </div>
     <div class="top"></div>
+    <script>
+            setTimeout(()=>{
+             let img=document.getElementById("tp")
+              img.style.filter='blur(0px)'
+            },1000)
+    </script>
 </body>
 </html>

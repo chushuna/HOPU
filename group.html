@@ -16,9 +16,9 @@
             </div>
             <div class="headd-r">
                 <ul>
-                    <li><a href="#">首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li><a href="./news.html">新闻</a></li>
-                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="partner.html">合作伙伴</a></li>
                     <li><a href="./jiejuefangan.html">解决方案</a></li>
                     <li><a href="./social.html">社会责任</a></li>
                     <li><a href="./contact.html">联系方式</a></li>
@@ -129,13 +129,17 @@
         function f(){
         if(obj.style.height="0px"){
             obj.style.height="280px";
+            obj.style.transition="0.5s";
             b.style.display ="none";
         }
         // if(obj.style.height="280px") {
            
         // }     
-}
-        
+}    
+  setTimeout(()=>{
+             let img=document.getElementsByClassName("body2-liu")[0]
+              img.style.filter='blur(0px)'
+            },1000)
     
     </script>
 </body>

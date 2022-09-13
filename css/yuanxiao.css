@@ -45,25 +45,27 @@
     font-size: 14px;
     line-height: 36px;
     color: #545b68;
-    margin-left: 400px;
+    margin-left: 350px;
     margin-top: 46px;
 }
 .sj{
     position: absolute;
-    margin-top: 31px;left: 497px;width: 0;height: 0;
+    margin-top: 31px;left: 477px;width: 0;height: 0;
     border: 6px solid transparent;
     border-left-color: #112342;
 }
 .c1 ul li{
     list-style: none;
     float: left;
-    margin-left: 30px;
-    border-width: 0 0 3px 0;
-    border-style: solid;
-    border-color: #761818;
+    margin-left: 50px;
     margin-top: 6.5px; 
     line-height: 60px;
     text-align: center;    
+}
+.c1 ul .tit2{
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #761818;
 }
 .c1 ul li a{
     text-decoration: none;
@@ -74,10 +76,11 @@
 .da{
     margin-top: 50px;
     width: 98%;height: 910px;
+    filter: blur(5px);
 }
 .center{
     display: flex;
-    margin-left: 420px;
+    margin-left: 400px;
     width: 423px;height: 394px;
     
 
@@ -116,14 +119,14 @@
 
 }
 .foot{
-    margin-left: 420px;
-    width: 1160px;height: 471px;
-    padding-bottom: 70px;
+    margin-left: 400px;
+    width: 1090px;height: 471px;
+    
 }
 .ttop{
-    height: 141px;
+    height: 141px;width: 1090px;
     background-color: #f7f6f7;
-    padding: 50px 0;
+    padding: 40px 0;
     display: flex;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -148,7 +151,7 @@
      margin-right: 33px;
 }
 .text{
-    margin-left: -700px;
+    margin-left: -600px;
     width: 300px;
   height: 42px;
 }
@@ -162,7 +165,8 @@
     color: #4b617b;
 }
 .last{
-    width: 1160px;height: 180px;
+    margin-left: 0px;
+    width: 960px;height: 180px;
     display: block;
 }
 .last .box{
