@@ -12,6 +12,9 @@ div{
 .head>div ,.btm>div ,.top>div{
     margin: auto;
 }
+.show{
+    filter: blur(5px);
+}
 .main{
     padding: 0 20px 0 20px;
     height: auto;
