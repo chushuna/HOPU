@@ -20,6 +20,7 @@
     //     oLiss[1].style.display = "none";
     // }
     var url = location.search;
+    console.log(url);
     if (url.indexOf("?") != -1) {    //判断是否有参数
         oLis[1].className = "newlan-tit active";
         oLiss[1].style.display = "block";
@@ -35,6 +36,18 @@
             }
             this.className = "active";
             oLiss[this.index].style.display = "block";
+            var img = necontent.getElementsByClassName("show");
+                console.log(img);
+                for(var a=0;a < img.length;a++){
+                    img[a].style.filter = 'blur(5px)';
+                }
+            setTimeout(() => {
+                // var img = necontent.getElementsByClassName("show");
+                // console.log(img);
+                for(var i=0;i < img.length;i++){
+                    img[i].style.filter = 'blur(0px)';
+                }
+            }, 1000)
         }
         
     }
@@ -69,5 +82,11 @@
             aIem[nowPage].className = "newcont-rightbox-textbox select";
         }
     }
-
+    setTimeout(() => {
+        var img = document.getElementsByClassName("show");
+        console.log(img);
+        for(var i=0;i < img.length;i++){
+            img[i].style.filter = 'blur(0px)';
+        }
+    }, 1000)
 // }
