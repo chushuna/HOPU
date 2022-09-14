@@ -1,5 +1,5 @@
 //tab切换
-function select_menu(obj1) {
+function select_menu(obj1) { 
   var imgss = document.getElementsByClassName("main_content_middle");
   console.log(imgss);
   for(var n = 0;n < imgss.length;n++){
