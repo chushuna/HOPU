@@ -1,13 +1,124 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: STXihei;
+}
+
 .body{
     width: 100%;
-    height: 1094px;border: solid;
+    height: auto;
+    min-height: 600px;
+    box-sizing: border-box;
 }
-.bodyy{
-    max-width: 1106px;
-    height: 1094px;
+.bbody{
+    padding: 0 20px;
 }
-.bodyy_t{
-    background: url(../img/img1/partner.png) no-repeat;
-    width: 1106px;
-    height: 1094px;
+.bbody_t>img{
+    max-width: 100%;
+    height: 101px;
+}
+.bbody_b_t{
+    margin-top: 40px;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.bbody_b_t>span{
+    display: inline-block;
+    width: 66px;
+    height: 55px;
+    font-size: 14px;
+    border-bottom: 3px solid #761818;
+    margin-left: 150px;
+}
+.bbody_b_b{
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+.bbody_b_b_bgc{
+    width: 100%;
+    height: 700px;
+    background-color: #F7F6F7;
+    position: absolute;
+    top: 80px;
+    left: -160px;
+}
+.bbody_b_b_bgc>ul{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-flow: column;
+}
+.bbody_b_b_bgc>ul>li{
+    list-style: none;
+    flex: 1;
+    width: 110px;
+    height: 60px;
+    text-align: center;
+    padding-top: 35px;
+    cursor: pointer;
+}
+.bbody_b_b_bgc>ul>li:first-child{
+    background-color: #ECF0F5;
+}
+.mainn{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    top: -700px;
+    left: 405px;
+}
+.main_content{
+    background-color: #ECF0F5;
+    width: 700px;
+    height: 700px;
+    display: none;
+}
+.mainn>.main_content:first-child{
+    display: block;
+}
+.main_content_top{
+    float: left;
+    margin-left: 50px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-left: 4px solid #761818;
+    padding-left: 15px;
+}
+.main_content_top>span{
+    display: inline-block;
+    width: 72px;
+}
+.main_content_middle{
+    width: 600px;
+    max-height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    filter: blur(5px);
+}
+.main_content_middle>img{
+    width: 198px;
+    height: 115px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+.kong{
+    width: 198px;
+    height: 115px;
+    background-color: #ECF0F5;
+    flex: 1;
+}
+.main_content_footer{
+    width: 600px;
+    height: 50px;
+    margin-top: 30px;
+}
+.main_content_footer>span{
+    float: left;
+    margin-right: 10px;
+    color: #24486d;
+    font-weight: 400;
+    font-size: 16px;
 }
