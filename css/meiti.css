@@ -1,0 +1,84 @@
+.img-new{
+
+    text-align: center;
+}
+.zhong{
+    display: flex;
+    width: 1200px;
+    height: 70px;
+    border-bottom: 2px solid #e1e1e1;
+}
+.zhong ul{
+    list-style: none;
+    display: flex;
+    width: 365px;
+    height: 90px;
+    line-height: 70px;
+    margin-left: -430px;
+    font-family: 华文细黑;
+    color: #002463;
+
+}
+.zhong li {
+    float: left;height: 70px;
+    margin-left: 40px;
+}
+.zhong li a{
+
+    text-decoration: none;
+}
+.li_2022{
+    border-bottom: #761818 solid 3px;
+}
+.sj{
+    position: absolute;
+    margin-top: 30px;left: 450px;width: 0;height: 0;
+    border: 5px solid transparent;
+    border-left-color: #112342;
+}
+.lianjie{
+    width: 900px;height: 300px;
+    margin-left: 350px;
+    border-right: 2px solid #e1e1e1 ;
+    display: none;
+}
+#a1{
+    display: block;
+}
+.aa{
+    text-decoration: none;
+}
+.baodao_2022{
+    color: #bec0bf;
+    font-family: 华文细黑;
+    font-size: 30px;
+    margin-left: 290px;
+}
+.year{
+    margin-left: -260px;
+    margin-right: 30px;
+    height: 90px;
+    line-height: 99px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.sp2{
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+
+}
+.bt_xia{
+    color: #bec0bf;
+    font-size: 14px;
+    margin-left: 21px;
+    font-family: 华文细黑;
+}
+.sp3{
+    margin-left: 21px;
+    margin-right: 20px;
+   text-decoration: none;
+
+}
